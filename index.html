@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- main page -->
+    <header>
+      <div>
+        <img src="img/toggle.svg">
+      </div>
+      <div>
+        <h5>Freelancers</h5>
+      </div>
+      <div>
+        <div class="full-end" onclick="openFilter()">
+          <img src="img/search.svg" class="c-p">
+          <img src="img/filters.svg" class="c-p">
+        </div>
+      </div>
+    </header>
+    <section id="card_list">
+    </section>
+    <section id="profile_details">
+    </section>
+    <!--end profile Page -->
+    <!-- filters -->
+    <div class="filters-box" id="filters-box">
+      <div class="line"></div>
+      <div class="filters">
+        <div class="row bb-1 pb-20">
+          <div class="c-7">
+            <h5>Beginer</h5>
+            <p class="f-11 text-grey">Budget : Below Rs 50 K</p>
+          </div>
+          <div class="c-5 full-end">
+            <img src="img/beginner.svg" class="pr-22">
+            <input type="radio" id="below_three" name="filter_rating" value="2">
+          </div>
+        </div>
+        <div class="row bb-1 pb-20 pt-17">
+          <div class="c-7">
+            <h5>Moderate</h5>
+            <p class="f-11 text-grey">Budget : Below Rs 100 K</p>
+          </div>
+          <div class="c-5 full-end">
+            <img src="img/moderate.svg" class="pr-22">
+            <input type="radio" id="below_four" name="filter_rating" value="4">
+          </div>
+        </div>
+        <div class="row pb-20 pt-17">
+          <div class="c-7">
+            <h5>Expert</h5>
+            <p class="f-11 text-grey">Budget : Below Rs 200 K</p>
+          </div>
+          <div class="c-5 full-end">
+            <img src="img/experts.svg" class="pr-22">
+              <input type="radio" id="below_five" name="filter_rating" value="5">
+          </div>
+        </div>
+        <button class="btn-lg" onclick="createFilter()">Save</button>
+      </div>
+    </div>
+    <!--end filters -->
+    <script src="myown.js"></script>
+  </body>
+</html>
